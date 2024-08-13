@@ -11,7 +11,7 @@ problem 1
  console.log(isSum(10,0));
  console.log(isSum(90,10));
 
-*/ 
+*/
 /*  
 problem 2 
 write a javascript program to get file extension from file name 
@@ -59,4 +59,41 @@ function shiftCharacters(str) {
   .join("") ;
   
   console.log(moveForward("abcd"));
+*/
+
+/* problem 3
+write a javascript program to get the current date .
+in month/date/year manner or month-date-year 
+or 
+date-month-year || date/month/year
+
+const  formatDate =(date  = new Date()) =>{
+    const days = date.getDate( ) +1;
+    const month  = date.getMonth()+1   ;
+    const year = date.getFullYear();
+    return `${days}/${month}/${year}`
+}
+console.log(formatDate());
+*/
+
+/*
+problem 4
+Write a JavaScript program to create a new string adding "new !" ion front of the given string 
+if the it is there then print the string as it is 
+
+
+const addString = (str) => {
+    if (str.startsWith("new !")) {
+        return str;
+    } else {
+        return "new !" + str;
+    }
+}
+console.log(addString("new ! 0object")); // Output: "new !"
+console.log(addString("cllass"));
+
+const addNew = (str) =>
+    str.indexOf("New !") === 0 ? str : `New! ${str}`;
+console.log(addNew("new ! 0object"));
+console.log(addNew("cllass"));
 */
